@@ -1,0 +1,24 @@
+# base node
+FROM node:8.12 as builder
+
+# working dir
+RUN mkdir -p /ine-beers
+WORKDIR /ine-beers
+
+# copy app source
+COPY . ./
+
+# install dependencies and build app
+RUN npm install --quiet && npm run build
+
+# set up production container
+FROM nginx:1.13.9-alpine
+
+# copy built resources to new prod container
+COPY --from=builder /ine-beers/build /usr/share/nginx/html
+
+# expose port
+EXPOSE 80
+
+# start server
+CMD ["nginx", "-g", "daemon off;"]

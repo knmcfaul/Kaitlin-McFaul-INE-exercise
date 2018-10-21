@@ -1,0 +1,65 @@
+.beer-tagline {
+    display: inline;
+    font-style: italic;
+    font-size: medium;
+    padding-left: 3%;
+}
+
+.beer-author {
+    font-size: small;
+    padding-top: 2%;
+}
+
+.method-subheader {
+    font-size: large;
+    padding-top: 2%;
+}
+
+.drawer-container .ant-drawer-content-wrapper {
+    min-width: 450px;
+}
+
+.inline-pair h3 {
+     display: inline;
+     padding-right: 10px;
+ }
+
+.inline-pair p {
+    display: inline;
+}
+
+.ingredient-container {
+    padding: 5px 0;
+}
+
+.inline-div {
+    display: inline;
+}
+
+.centered-title {
+    text-align: center;
+}
+
+.centered-badge .ant-avatar {
+    width: 30%;
+    margin-left: 35%;
+    color: black;
+}
+
+.small-text {
+    font-weight: normal;
+}
+
+.shaded-top {
+    background: lightgrey;
+    border-radius: 5px 5px 0 0;
+}
+
+.shaded-bottom {
+    background: lightgrey;
+    border-radius: 0 0 5px 5px;
+}
+
+.shaded-border {
+    border-bottom: 1px solid lightgrey;
+}
