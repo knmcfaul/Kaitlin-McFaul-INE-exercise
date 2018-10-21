@@ -1,7 +1,11 @@
 To run via docker, in the command line interface:
 
-1. Execute: docker run -d inebeers -p 80:80 inebeers .
-2. Navigate to localhost:80 to view the application
+1. Execute: docker pull knmcfaul/ine-beers:prod
+2. Execute: docker run -d --name ine-beers -p 80:80 knmcfaul/ine-beers:prod
+3. Navigate to localhost to view the application
+
+For the development image on docker, replace "knmcfaul/ine-beers:prod" with "knmcfaul/ine-beers:dev", and update the port
+mapping from "-p 80:80" to "-p 3000:3000". Navigate to localhost:3000 to view the app.
 
 To run via node, in the command line interface:
 
